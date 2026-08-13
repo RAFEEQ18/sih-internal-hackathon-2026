@@ -5,7 +5,6 @@ import Link from "next/link";
 import { problemStatements } from "@/data/problemStatements";
 
 export default function ProblemsPage() {
-  const [search, setSearch] = useState("");
   const [selectedTheme, setSelectedTheme] = useState("");
   const [selectedType, setSelectedType] = useState("");
 
@@ -13,23 +12,17 @@ export default function ProblemsPage() {
   const themes = Array.from(new Set(problemStatements.map((p) => p.theme))).sort();
   const types = ["SOFTWARE", "HARDWARE", "SOFTWARE/HARDWARE"];
 
-  // Filter logic
+  // Filter logic - keeps original order
   const filteredProblems = problemStatements.filter((p) => {
-    const matchesSearch =
-      p.title.toLowerCase().includes(search.toLowerCase()) ||
-      p.theme.toLowerCase().includes(search.toLowerCase()) ||
-      p.description.toLowerCase().includes(search.toLowerCase());
-
     const matchesTheme = selectedTheme ? p.theme === selectedTheme : true;
     const matchesType = selectedType ? p.type === selectedType : true;
 
-    return matchesSearch && matchesTheme && matchesType;
+    return matchesTheme && matchesType;
   });
 
-  const isFiltered = search || selectedTheme || selectedType;
+  const isFiltered = selectedTheme || selectedType;
 
   const handleClearFilters = () => {
-    setSearch("");
     setSelectedTheme("");
     setSelectedType("");
   };
@@ -45,28 +38,13 @@ export default function ProblemsPage() {
               Problem Statements
             </h1>
             <p className="mt-1 text-sm text-slate-500">
-              Browse, search, and filter the official problem statements for the SIH 2026 Internal Hackathon.
+              Browse and filter the official problem statements for the SIH 2026 Internal Hackathon.
             </p>
           </div>
 
-          {/* Search and Filters panel */}
+          {/* Filters panel */}
           <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {/* Search Bar */}
-              <div className="flex flex-col">
-                <label htmlFor="search" className="text-xs font-semibold text-slate-600 mb-1">
-                  Search
-                </label>
-                <input
-                  id="search"
-                  type="text"
-                  placeholder="Search title, theme, description..."
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                  className="px-3.5 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-slate-50"
-                />
-              </div>
-
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Theme Filter */}
               <div className="flex flex-col">
                 <label htmlFor="theme" className="text-xs font-semibold text-slate-600 mb-1">
@@ -136,24 +114,42 @@ export default function ProblemsPage() {
                   typeStyle = "bg-orange-50 text-orange-850 border-orange-100";
                 }
 
+                // Calculate problem statement number with zero-padding (e.g., 01, 02)
+                const problemNumber = String(problem.id).padStart(2, "0");
+
                 return (
                   <div
                     key={problem.id}
                     className="flex flex-col justify-between bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-all duration-150"
                   >
                     <div className="space-y-4">
-                      {/* Theme and Type Badge */}
-                      <div className="flex justify-between items-start gap-3">
-                        <span className="text-[10px] font-bold text-slate-400 tracking-wider uppercase block truncate max-w-[70%]">
-                          {problem.theme}
-                        </span>
-                        <span className={`text-[9px] font-extrabold px-2 py-0.5 rounded border tracking-wide ${typeStyle} shrink-0`}>
-                          {problem.type}
-                        </span>
+                      {/* Problem Statement Number */}
+                      <p className="text-xs font-bold text-slate-500 tracking-wider">
+                        PROBLEM STATEMENT {problemNumber}
+                      </p>
+
+                      {/* Theme and Type display */}
+                      <div className="flex flex-col gap-1.5 pt-1">
+                        <div className="flex items-start">
+                          <span className="text-[10px] font-bold text-slate-400 tracking-widest uppercase">
+                            THEME:
+                          </span>
+                          <span className="ml-2 text-[10px] font-bold text-slate-700 tracking-wider uppercase">
+                            {problem.theme}
+                          </span>
+                        </div>
+                        <div className="flex items-start">
+                          <span className="text-[10px] font-bold text-slate-400 tracking-widest uppercase">
+                            TYPE:
+                          </span>
+                          <span className={`ml-2 text-[10px] font-extrabold px-1.5 py-0.5 rounded border tracking-wide uppercase ${typeStyle}`}>
+                            {problem.type}
+                          </span>
+                        </div>
                       </div>
 
                       {/* Problem Statement Title */}
-                      <h2 className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                      <h2 className="text-lg font-bold text-slate-900 leading-snug pt-2">
                         {problem.title}
                       </h2>
                     </div>
@@ -173,7 +169,7 @@ export default function ProblemsPage() {
             </div>
           ) : (
             <div className="text-center py-12 bg-white rounded-xl border border-slate-200 shadow-sm space-y-4">
-              <p className="text-slate-500 font-medium">No problem statements matched your search or filters.</p>
+              <p className="text-slate-500 font-medium">No problem statements matched your filters.</p>
               <button
                 onClick={handleClearFilters}
                 className="text-sm font-semibold text-orange-600 hover:text-orange-700 border border-orange-200 px-4 py-2 rounded-lg hover:bg-orange-50 transition-colors"

@@ -27,6 +27,9 @@ export default async function ProblemDetailsPage({ params }: ProblemDetailsProps
     typeStyle = "bg-orange-50 text-orange-850 border-orange-100";
   }
 
+  // Calculate problem statement number with zero-padding (e.g., 01, 02)
+  const problemNumber = String(problem.id).padStart(2, "0");
+
   return (
     <div className="flex-1 flex flex-col justify-between bg-slate-50">
       {/* Main Container */}
@@ -46,16 +49,30 @@ export default async function ProblemDetailsPage({ params }: ProblemDetailsProps
           <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-6">
             {/* Header info */}
             <div className="border-b border-slate-100 pb-6 space-y-4">
-              <div className="flex flex-wrap items-center gap-3">
-                <span className="text-[10px] font-bold text-slate-400 tracking-wider uppercase block">
-                  {problem.theme}
-                </span>
-                <span className={`text-[10px] font-bold px-2 py-0.5 rounded border tracking-wide ${typeStyle}`}>
-                  {problem.type}
-                </span>
+              <p className="text-sm font-bold text-slate-500 tracking-wider">
+                PROBLEM STATEMENT {problemNumber}
+              </p>
+
+              <div className="flex flex-col gap-1.5">
+                <div className="flex items-start">
+                  <span className="text-[10px] font-bold text-slate-400 tracking-widest uppercase">
+                    THEME:
+                  </span>
+                  <span className="ml-2 text-[10px] font-bold text-slate-700 tracking-wider uppercase">
+                    {problem.theme}
+                  </span>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-[10px] font-bold text-slate-400 tracking-widest uppercase">
+                    TYPE:
+                  </span>
+                  <span className={`ml-2 text-[10px] font-extrabold px-1.5 py-0.5 rounded border tracking-wide uppercase ${typeStyle}`}>
+                    {problem.type}
+                  </span>
+                </div>
               </div>
               
-              <h1 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-tight">
+              <h1 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-tight pt-2">
                 {problem.title}
               </h1>
             </div>
