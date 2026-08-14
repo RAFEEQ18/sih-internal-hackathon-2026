@@ -73,7 +73,7 @@ export default function Header() {
             </Link>
             <span className="text-slate-700">|</span>
             <a
-              href="/SIH INTERNAL HACKATHON PS-26 - Sheet1.pdf"
+              href="SIH INTERNAL HACKATHON PS-26 - Sheet1.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-300 hover:text-white transition-colors duration-150"
@@ -133,7 +133,7 @@ export default function Header() {
               Problem Statements
             </Link>
             <a
-              href="/SIH INTERNAL HACKATHON PS-26 - Sheet1.pdf"
+              href="SIH INTERNAL HACKATHON PS-26 - Sheet1.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
