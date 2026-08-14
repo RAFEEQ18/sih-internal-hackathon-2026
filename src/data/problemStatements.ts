@@ -45,9 +45,9 @@ export const problemStatements: ProblemStatement[] = [
   {
     id: "6",
     theme: "MED TECH / BIOTECH / HEALTH TECH",
-    title: "Wearable sensor with Artificial Intelligence for prevention of falls in elderly people",
+    title: "Development of portable device (non-contact device) for measurement of eye pressure in glaucoma patients for usage at home.",
     type: "HARDWARE",
-    description: "Background: As per the census 2011, Disability is more common in elderly people. One of the major reasons for disability among the elderly people is falls. Every year, one-third of community-dwelling older adults (adults aged 65 and older) experience a fall. Falls, defined as “unexpected event[s] in which the participant comes to rest on the ground, floor, or lower level,” are responsible for a wide range of negative health outcomes. Falls are the leading cause of injury-related deaths among older adults, and the age-adjusted fall death rate (64 deaths per 100,000 older adults) increased by 30%. Additionally, the psychological impact of falling can cause older adults and their caregivers significant fear about the risk of falling again. This fear of falling can have an accumulating effect whereby the fear of falling causes individuals to limit their everyday physical activities, which in turn makes them weaker and more susceptible to future falls. In fact, studies have shown that falling once doubles the chances of falling again. Many falls, however, can be prevented. One of the most effective ways to reduce fall risk is through targeted exercise that improves an individual’s strength, balance, and mobility Description: Exercise-based programs, such as the Otago Exercise Program and Tai Ji Quan: Moving for Better Balance, have been shown to reduce falls by up to 35% and 55%, respectively. Until recently, however, the vast majority of fall prevention programs were only offered in small, in-person classes hosted in local senior centres or gyms. Although this has been the standard dissemination method for decades, it comes with significant barriers to participation. Common barriers to in-person programs include a lack of programs in rural or under resourced communities; limited or no access to transportation; scheduling conflicts; cost of getting to and using facilities; interpersonal barriers, such as finding other participants’ presence intimidating; and physical environmental barriers, such as bad weather, stairs, uneven ground, difficult parking, and more The recent developments in Wearable technology with Artificial intelligence may help elderly people in preventing falls by giving tactile/visual/auditory feedback to users regarding risks of falling. This software may be developed with sensors that could able to sense whenever there is risk of Line of Gravity (LOG) goes outside the Base of Support (BOS) during day-to-day activities for elderly people as this is the commonest reason for elderly people. Expected Solution: These technologies will help elderly people to prevent falling by which Disability may be prevented. This digital delivery of a fall prevention program may be feasible. This suggests that the digital program addresses a previously unmet need in the community and its delivery would be sufficient to engage the community dwellers"
+    description: "Background: Glaucoma is a leading cause of blindness worldwide, and managing intraocular pressure (IOP) is crucial for preventing disease progression. Description: Traditional methods of measuring IOP, such as Goldmann applanation tonometry, require direct contact with the eye, topical anaesthesia, and skilled personnel, making them less accessible for regular monitoring. Non-contact methods, such as air-puff tonometry, offer a more convenient alternative but are often limited to clinical settings due to their size and cost. Expected Solution: Problem statement is to develop a cost-effective, portable, and non-contact device that can measure IOP accurately and reliably with safety. This device should be easy to use, and allowing patients to use at home."
   },
   {
     id: "7",
@@ -59,9 +59,9 @@ export const problemStatements: ProblemStatement[] = [
   {
     id: "8",
     theme: "AGRICULTURE, FOOD TECH & RURAL DEVELOPMENT",
-    title: "Farmers Disease Diagnostic/Reporting Portal - Mobile Portal Al Based",
-    type: "SOFTWARE",
-    description: "Background- Agricultural productivity and food security are heavily dependent on the health of crops and livestock. Farmers, especially in remote or resource-limited areas, often face challenges in diagnosing and reporting diseases that affect their livestock and crops. Early diagnosis and timely reporting are crucial for effective disease management and prevention of widespread outbreaks. Description - A mobile portal powered by Artificial lntelligence (Al) for disease diagnosis and reporting can revolutionize how farmers manage animal and plant health. This portal enables farmers to use their smartphones to access diagnostic tools, report symptoms, and receive actionable advice. Al algorithms can analyze reported data to provide accurate diagnoses and suggest appropriate treatments or interventions. This technology can empower farmers with the knowledge and tools to manage diseases more effectively, ensuring the health and productivity of their farms. lntegrate Al-based software with existing NDLM to allow farmers to submit images and descriptions of disease signs and symptoms. The Al will generate suspected disease/condition reports with preventive measures and send alerts to veterinarians for appropriate action (Al-based software, Mobile application). Expected Outcomes . Enhanced Disease Diagnosis: . Timely Reporting and lntervention: . lncreased Access to Expert Knowledge: . lmproved Farm Productivity. Data Collection and Analysis: Cost-Effective DiseaseManagement: Empowerment and Education of Farmers: lntegration with Existing Surveillance Systems . Community Engagement and Support: Sustainable Agriculture Practices"
+    title: "Smart Irrigation System for Precision Farming",
+    type: "HARDWARE",
+    description: "Background: Water scarcity is a major challenge in agriculture, leading to inefficient water use and reduced crop yields. Traditional irrigation methods often result in overuse or underuse of water. Description: Develop a smart irrigation system that utilizes sensors and IoT technology to monitor soil moisture levels and weather conditions. This system will provide real-time data to farmers, enabling them to make informed decisions on irrigation scheduling, thus optimizing water usage and enhancing crop yield. Expected Solution: A smart irrigation module integrated with moisture sensors and a mobile application to provide farmers with timely irrigation alerts and recommendations based on real-time data"
   },
   {
     id: "9",
@@ -80,9 +80,9 @@ export const problemStatements: ProblemStatement[] = [
   {
     id: "11",
     theme: "TRANSPORTATION & LOGISTICS",
-    title: "AI-Based Dynamic School-Bus Safety Route Optimizer",
-    type: "SOFTWARE",
-    description: "School-bus routes are usually planned based on distance and travel time, but the shortest route may not always be the safest route for children. Traffic congestion, accident-prone areas, poor road conditions, inadequate street lighting, pedestrian density, weather, road closures, and school timings can affect route safety. The system should analyze these safety factors, assign risk/safety scores to road segments, dynamically recommend the safest feasible route, identify safer pickup and drop-off points, and update the recommended route when road conditions change while considering travel time and operational constraints. A software-based system is needed to perform these functions and provide safe and efficient route recommendations."
+    title: "Smart College Traffic & Parking Management System",
+    type: "SOFTWARE/HARDWARE",
+    description: "During college opening/closing times and events, many vehicles enter and leave the campus at the same time. This causes traffic congestion, parking problems, and difficulty finding available parking spaces.So Develop a software/hardware system that monitors vehicle entry/exit and available parking spaces using sensors or cameras. The system should show available parking areas, guide vehicles to free spaces, and provide traffic information to the campus security/administration through a dashboard."
   },
   {
     id: "12",
@@ -94,51 +94,51 @@ export const problemStatements: ProblemStatement[] = [
   {
     id: "13",
     theme: "ROBOTICS & DRONES",
-    title: "GNSS-Denied Autonomous Drone Navigation & Inspection System",
+    title: "Drone-Based Campus/Building Inspection System",
     type: "SOFTWARE/HARDWARE",
-    description: "Autonomous drones generally depend on GPS/GNSS for navigation, but these signals may be unavailable or unreliable inside warehouses, factories, tunnels, underground facilities, and large buildings. The solution should enable a drone to navigate and perform inspections without relying on GNSS using cameras, IMU, LiDAR/depth sensors, Visual SLAM, obstacle detection, and autonomous path planning. It should build an environment map, avoid obstacles, reach specified inspection locations, collect information, and safely return to its starting or docking location. A software/hardware system is needed to enable autonomous drone navigation and inspection in GNSS-denied environments"
+    description: "Checking large buildings, rooftops, solar panels, towers, or other difficult-to-reach areas manually can be time-consuming and sometimes unsafe.So Develop a software/hardware drone system that captures images or videos of selected areas and uses computer vision to identify visible problems such as cracks, damaged surfaces, or obstacles. The system should generate an inspection report"
   },
   {
     id: "14",
     theme: "CLEAN & GREEN TECHNOLOGY",
-    title: "AI-Based Construction-Dust Source Identification & Mitigation System",
+    title: "Smart Waste Segregation System",
     type: "SOFTWARE/HARDWARE",
-    description: "Construction activities can generate high levels of PM2.5 and PM10 particulate pollution, but conventional air-quality monitoring systems generally indicate pollution levels without identifying the activity responsible. The system should combine particulate-matter sensors, wind speed and direction, camera-based activity detection, construction-site information, and GIS data to identify probable sources of construction dust. It should generate a dust-risk map, identify probable pollution sources, estimate risk levels, and recommend suitable mitigation actions such as water spraying or temporary control of high-dust activities. A software/hardware system is needed to monitor, identify, predict, and mitigate construction-related dust pollution"
+    description: "In many places, wet waste and dry/recyclable waste are mixed together, making waste processing and recycling difficult.So Develop a software/hardware system that uses sensors and/or a camera with AI image classification to identify waste and help separate it into categories such as wet waste, plastic, paper, and metal."
   },
   {
     id: "15",
     theme: "CLEAN & GREEN TECHNOLOGY",
-    title: "Smart Storm-Drain Plastic Interception & Blockage Prediction System",
+    title: "Smart Water Leakage & Wastage Detection System",
     type: "SOFTWARE/HARDWARE",
-    description: "Plastic and other solid waste entering storm-water drains can reduce water flow, cause blockages, and increase the risk of urban flooding. Drain cleaning is often carried out only after significant blockage has occurred. The system should capture floating plastic waste while monitoring waste accumulation, water level, and flow conditions. It should use sensors and intelligent analytics to estimate waste accumulation, predict potential blockage before it becomes critical, and automatically alert maintenance authorities so that preventive cleaning can be performed. A software/hardware system is needed to intercept plastic waste, monitor drain conditions, predict blockages, and support timely preventive maintenance."
+    description: "Water leaks in college buildings, hostels, homes, and public places may continue for a long time without being noticed, resulting in significant water wastage.So Develop a software/hardware system that monitors water flow and usage using sensors. The system should detect unusual water flow, identify possible leakage, send alerts, and display water consumption through a dashboard."
   },
   {
     id: "16",
-    theme: "TOURSIM",
-    title: "Personalized Local Tourism Discovery and Recommendation",
+    theme: "TOURISM",
+    title: "Tourist Crowd Management",
     type: "SOFTWARE",
-    description: "Tourists often find it difficult to discover lesser-known tourist destinations, local attractions, cultural experiences, and hidden places that match their interests, budget, available time, and preferred activities. Existing tourism platforms mainly promote popular destinations, resulting in overcrowding at well-known locations while many valuable local attractions remain unnoticed. A software-based system is needed to identify and recommend suitable lesser-known places based on individual tourist preferences and provide a personalized travel plan that improves the overall tourism experience while supporting local destinations."
+    description: "Popular tourist destinations often experience heavy crowds during peak hours and seasons, resulting in long waiting times, traffic congestion, overcrowding, and reduced visitor satisfaction. At the same time, nearby attractions may remain less crowded and underused. Tourists and tourism authorities often lack a clear way to understand crowd conditions and their impact on different tourist locations, making effective crowd management difficult."
   },
   {
     id: "17",
     theme: "RENEWABLE / SUSTAINABLE ENERGY",
-    title: "Smart Waste-to-Energy Feedstock Management",
+    title: "Smart Biomass Moisture Detection System",
     type: "SOFTWARE/HARDWARE",
-    description: "Organic wastes such as food waste, animal waste, and agricultural waste are often mixed without knowing the best combination for energy production, which can reduce biogas output and cause poor waste management. A smart system is needed to identify and measure different types of organic waste, analyze their moisture and quantity, and recommend the most suitable mixture for biogas production. The system can use sensors and intelligent software to predict energy output and improve the efficiency of waste-to-energy production."
+    description: "Agricultural wastes such as rice husk, straw, coconut shells, and wood residues are commonly used as biomass for renewable energy production. However, different moisture levels can affect their burning efficiency, energy output, and storage quality. Excess moisture can reduce energy production and may also cause fungal growth or spoilage during storage. A simple system is needed to monitor the moisture and temperature of biomass materials and determine whether they are suitable for energy production."
   },
   {
     id: "18",
     theme: "RENEWABLE / SUSTAINABLE ENERGY",
-    title: "Smart Renewable Energy Storage Priority System",
+    title: "Smart Solar Panel Shade Detection System",
     type: "SOFTWARE/HARDWARE",
-    description: "Renewable energy production changes continuously, while batteries have limited capacity and degrade with frequent charging and discharging. When multiple renewable-energy sources and appliances are connected, it is difficult to decide which energy should be stored, which should be used immediately, and which loads should be operated first. A hardware-and-software system is needed to monitor renewable generation, battery condition, and household energy demand, then intelligently prioritize energy usage and storage to reduce energy wastage, extend battery life, and maximize the use of renewable energy."
+    description: "Solar panels can experience a significant reduction in power generation when temporary or permanent shadows from trees, buildings, vehicles, or nearby objects fall on their surface. Users may not easily identify whether a decrease in power output is caused by shading or other factors. This can lead to reduced energy generation and inefficient use of the solar installation. A system is needed to monitor the solar panel's light conditions and power output and identify unusual reductions in generation caused by shading."
   },
   {
     id: "19",
     theme: "BLOCKCHAIN & CYBER SECURITY",
-    title: "Blockchain-Based Software License Misuse Detection",
+    title: "Secure Digital Consent Tracking System",
     type: "SOFTWARE",
-    description: "Organizations often purchase software licenses for a specific number of users, devices, or duration, but it can be difficult to continuously track whether these licenses are being shared, transferred, duplicated, or used beyond their permitted limits. Unauthorized license usage can cause financial losses, security risks, and compliance issues. A software-based system is needed to create a tamper-resistant digital record of software ownership, license activation, user/device assignment, transfers, and expiration. Blockchain can maintain the trusted license history, while the application can automatically monitor usage and identify duplicate activations, expired licenses, and suspicious license transfers, allowing administrators to take appropriate action."
+    description: "Users regularly provide consent to websites and applications to collect, store, and use their personal information, but they often cannot easily remember what information they agreed to share, when they gave consent, or how long the permission remains valid. Consent records may also be changed or become difficult to verify later. A software-based system is needed to maintain a secure and transparent history of user consent, allowing users to view, manage, and withdraw their permissions while providing organizations with a reliable record of consent."
   },
   {
     id: "20",
@@ -149,44 +149,37 @@ export const problemStatements: ProblemStatement[] = [
   },
   {
     id: "21",
-    theme: "DISASTER MANAGEMENT",
-    title: "Smart Flood Early Warning System",
-    type: "SOFTWARE/HARDWARE",
-    description: "Flood-prone areas sometimes do not get enough warning before water levels become dangerous. This can lead to loss of life and property. Develop a solution that can give people an early and reliable warning about possible floods."
+    theme: "TOYS & GAMES",
+    title: "Preservation and Engagement of Traditional Indian Games",
+    type: "SOFTWARE",
+    description: "Many traditional Indian games that were once commonly played by children and communities are becoming less familiar to younger generations. Changes in lifestyle, limited awareness of regional variations, and the increasing preference for modern forms of entertainment have contributed to the gradual decline in participation and knowledge of these games. In many cases, information about the rules, cultural background, variations and traditional methods of playing such games is scattered or passed down informally. There is a need to address the challenge of making traditional Indian games more accessible and engaging to younger generations while preserving the cultural knowledge associated with them."
   },
   {
     id: "22",
+    theme: "TOYS & GAMES",
+    title: "Gamified Programming Learning Platform",
+    type: "SOFTWARE",
+    description: "Beginners often find programming difficult because learning mainly involves understanding syntax, solving repetitive coding exercises, and identifying errors without an engaging learning environment. This can make it difficult for learners to develop logical thinking and problem-solving skills while maintaining interest in programming. There is a need to address the challenge of making programming concepts more engaging and interactive through a game-oriented learning experience that encourages learners to understand concepts, apply logic, overcome challenges, and progressively improve their programming skills"
+  },
+  {
+    id: "23",
     theme: "DISASTER MANAGEMENT",
     title: "Emergency Resource Allocation System",
     type: "SOFTWARE",
     description: "During a disaster, rescue teams, ambulances, shelters, and essential supplies may not be available where they are needed most. It can be difficult for authorities to decide what should be sent first and where. Develop a solution that can help manage and distribute emergency resources effectively."
   },
   {
-    id: "23",
-    theme: "TOYS & GAMES",
-    title: "Adaptive Learning Game for Children",
-    type: "SOFTWARE",
-    description: "Children learn at different speeds, but many educational games give the same questions and difficulty to everyone. This can make learning less effective and less interesting. Develop an engaging game that can provide a better learning experience for children with different learning levels."
-  },
-  {
     id: "24",
     theme: "SPACE AND TECHNOLOGY",
-    title: "Satellite-Based Infrastructure Change Detection",
+    title: "Making Space Science and Mission Operations Understandable to Students",
     type: "SOFTWARE",
-    description: "Roads, buildings, and other structures change over time. Finding these changes manually from satellite images can take a lot of time. Develop a solution that can help identify important changes in infrastructure using satellite data."
+    description: "Space missions involve several complex concepts, including launch sequences, orbital motion, satellite operations, communication, payloads, mission stages and spacecraft status. These concepts can be difficult for school and college students to understand because they are generally presented through highly technical material or theoretical explanations. Students often have limited opportunities to interact with or explore these concepts in an intuitive manner. There is a need to address the challenge of improving students' understanding of fundamental space science and mission operations in a way that makes complex concepts easier to explore and comprehend."
   },
   {
     id: "25",
-    theme: "SPACE AND TECHNOLOGY",
-    title: "Smart Satellite Image Search & Information System",
-    type: "SOFTWARE",
-    description: "A large amount of satellite data is available for different locations and dates, but finding and understanding the right information can be difficult. Develop a simple solution that helps users find relevant satellite images and understand useful information about a selected area."
-  },
-  {
-    id: "26",
     theme: "MISCELLANEOUS",
     title: "Student Innovation",
     type: "SOFTWARE/HARDWARE",
-    description: "Students will select a suitable problem statement from the Miscellaneous theme."
+    description: "Identify a meaningful real-world problem and develop an innovative, feasible technology-based solution to address it."
   }
 ];
