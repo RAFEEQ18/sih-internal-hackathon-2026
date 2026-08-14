@@ -51,6 +51,14 @@ export default function Home() {
               Explore Problem Statements
             </Link>
             <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd6PdY18AHTZbFbQ9xooNrn5oxcr3QLKUyx199w4Lx2aVvTPg/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-6 py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg shadow-sm hover:shadow transition-all duration-150 text-center text-sm"
+            >
+              Register Now
+            </a>
+            <a
               href="/SIH INTERNAL HACKATHON PS-26 - Sheet1.pdf"
               target="_blank"
               rel="noopener noreferrer"
